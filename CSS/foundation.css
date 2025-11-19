@@ -1,0 +1,613 @@
+.navbar {
+            background-color: white;
+            color: black;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+       
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+       
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+       
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+       
+        .nav-links li {
+            margin-left: 2rem;
+        }
+       
+        .nav-links a {
+            color: black;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+       
+        .nav-links a:hover {
+            color: #3498db;
+        }
+       
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+         @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+           
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background-color: #2c3e50;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 2rem;
+                transition: left 0.3s;
+            }
+           
+            .nav-links.active {
+                left: 0;
+            }
+           
+            .nav-links li {
+                margin: 1rem 0;
+            }
+          }
+          * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      background-color: #ffa200;
+    }
+
+    header {
+      background-color: #1f0798;
+      color: white;
+    }
+    .hero-section {
+    position: relative;
+    background-image: url('images/image 9.jpeg');
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh; /* Viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    text-align: center;
+    /* You may need a dark overlay here for text contrast */
+}
+.hero-content {
+    position: relative;
+    z-index: 10;
+    margin-top: 50px; /* Adjust for navigation bar space */
+}
+.hero-content h1 {
+    font-size: 4em;
+    font-weight: 900;
+    line-height: 1.1;
+    /* Use a custom web font if you want the exact style */
+}
+    /* Nav bar */
+    .header {
+  background-color: #ffa200;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    white-space: nowrap;
+}
+
+.logo i {
+    color: var(--secondary-color);
+    margin-right: 5px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding-bottom: 5px;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+ .main-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      padding: 10px 20px;
+      color: #ffa200;
+      position: relative;
+    }
+
+    .logo {
+      font-size: 1.2em;
+    }
+
+    .menu {
+      display: flex;
+      gap: 15px;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 0;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px 0;
+    }
+
+    @media (max-width: 768px) {
+      .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #222;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 150px;
+        border-radius: 5px;
+        padding: 10px;
+      }
+
+      .menu.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+.contact-info-header {
+    display: flex;
+    gap: 20px;
+    font-size: 0.9rem;
+    color: #333;
+    white-space: nowrap;
+}
+
+.contact-info-header i {
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+
+    #donateToggle {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+#donateToggle:hover {
+    background-color: #0056b3;
+}
+
+/* Form Container and Overlay */
+#donationFormContainer {
+    position: fixed; /* Fixed position to act as a modal/overlay */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it is above other content */
+}
+
+.hidden {
+    display: none !important; /* The JavaScript will toggle this class */
+}
+
+/* Form Styling */
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    max-height: 90vh; /* Limit height */
+    overflow-y: auto; /* Allow scrolling if content is long */
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input and Label Styling */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Banking Details Box */
+#infBox {
+    background-color: #c3a02f;
+    border: 1px solid #ffeeba;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#infBox h3 {
+    color: #856404;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+#infBox p {
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+/* Action Buttons */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.buttons button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    flex-grow: 1; /* Make buttons share space */
+    margin: 0 5px;
+}
+
+.submit-btn {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #1e7e34;
+}
+
+.reset-btn {
+    background-color: #ffc107; /* Yellow */
+    color: #333;
+}
+
+.reset-btn:hover {
+    background-color: #e0a800;
+}
+
+.close-btn {
+    background-color: #dc3545; /* Red */
+    color: white;
+}
+
+.close-btn:hover {
+    background-color: #c82333;
+}
+
+/* Styling for the 'Show Banking Details' button */
+#togglBtn {
+    background-color: #6c757d; /* Gray */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+#togglBtn:hover {
+    background-color: #5a6268;
+}
+.what-we-believe-section {
+    background-color: var(--light-bg);
+    padding: 80px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.section-heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+.feature-columns {
+    background-color: #ffb92c; /* Light background color */
+    padding: 50px 5%;
+    display: flex;
+    gap: 30px;
+}
+.feature-columns {
+    background-color: #f8f7f5; /* Light background color */
+    padding: 50px 5%;
+    display: flex;
+    gap: 30px;
+}
+.feature-columns .column {
+    flex: 1; /* Makes all columns equal width */
+    text-align: right;
+}
+.feature-columns img {
+    width: 90%;
+    height: 50%;
+    display: block;
+    margin-bottom: 20px;
+}
+.feature-columns h3 {
+    color: #2c3e50; /* Darker text color */
+    margin-bottom: 10px;
+}
+.believe-points {
+    flex: 1;
+}
+.image-placeholder {
+    flex: 1;
+    /* Placeholder for the image sizing */
+    min-width: 300px;
+    max-width: 400px;
+}
+.leadership-team-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 50px;
+}
+
+.member-photo {
+    /* Styles for the member's photo container */
+    overflow: hidden;
+}
+
+/* --- Footer --- */
+.main-footer {
+    background-color: var(--dark-bg);
+    color: var(--secondary-color);
+    padding: 40px 0 10px;
+}
+.gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+       
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+       
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+       
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+       
+        /* Lightbox styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+       
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+        }
+       
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 80vh;
+            display: block;
+            margin: 0 auto;
+        }
+       
+        .lightbox-caption {
+            color: white;
+            text-align: center;
+            margin-top: 1rem;
+        }
+       
+        .close-btn {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+       
+        .prev-btn, .next-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            background: rgba(0,0,0,0.5);
+            padding: 1rem;
+            border: none;
+        }
+       
+        .prev-btn {
+            left: 2rem;
+        }
+       
+        .next-btn {
+            right: 2rem;
+        }
+    /* Main content */
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+    .collapsible-form{
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+        padding: 0 1rem;
+    }
+    .collapsible-form form{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .collapsible-form:target{
+        max-height: 500px;
+        padding: 1rem;
+    }
+    .donation-button, .close-button{
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: beige;
+        color: #9e8403;
+        text-decoration: none;
+        border: 5px;
+        text-align: center;
+    }
+	/* Footer styling */
+    footer {
+      background-color: #241382;
+      color: white;
+      padding: 1.5rem 1rem;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .footer-nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .footer-nav a:hover {
+      color: #00bcd4;
+    }
+
+    .footer-info {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+    

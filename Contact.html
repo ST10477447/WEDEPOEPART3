@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "KGM IN'L">
+    <meta name = "author" content = "ST10477447">
+    <meta name = "keywords" content = "HTML, CSS, JavaScript">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+ <div class="container">
+                    <div align="left">
+                        <img src="images/a.jpg" style="width:70px; height:70px;">
+                    </div>
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+               
+                    KGM INT'L
+                </div>
+               <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="menu-toggle" id="menuToggle">☰</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="Home page.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Foundation.html">Foundation</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+                <div class="contact-info-header">
+                    <span class="email-top"><i class="far fa-envelope"></i> kgminternational2009@gmail.com</span>
+                    <span class="phone-top"><i class="fas fa-phone"></i> Call Us: +27 78 355 6634</span>
+                </div>
+            </div>
+    </header>
+
+    <section class="hero-banner">
+        <div class="overlay">
+            <div class="container">
+                <div class="breadcrumb-nav">
+                    Contact Us
+                </div>
+                <h1>Contact Us</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container form-info-wrapper">
+
+            <div class="contact-form-area">
+                <form id="contact-form" class="contact-form">
+                    <div class="input-group">
+                        <input type="text" id="name" required placeholder="Your Name">
+                        <label for="name" class="input-label">Full Name</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" id="email" required placeholder="Your Email">
+                        <label for="email" class="input-label">Email Address</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" id="subject" required placeholder="Subject">
+                        <label for="subject" class="input-label">Subject</label>
+                    </div>
+
+                    <div class="input-group message-group">
+                        <textarea id="message" required rows="5" placeholder="Message"></textarea>
+                        <label for="message" class="input-label">Your Message</label>
+                    </div>
+
+                    <button type="submit" class="send-button">
+                        SEND MESSAGE
+                    </button>
+                </form>
+            </div>
+
+
+
+            <div class="contact-details-area">
+                <span class="section-tag">Contact Us</span>
+                <h2>Get In Touch</h2>
+                <p>We would love to hear from you. Give us feedback on our website and church in general and we would love to
+                    hear any concerns and quieries you have.
+                </p>
+
+                <div class="details-grid">
+                    <div class="detail-item">
+
+                        <p>Call Us</p>
+                        <a href="tel:+27 78 355 6634">+27 78 355 6634</a>
+                    </div>
+                    <div class="detail-item">
+                        <i class="far fa-envelope icon-primary"></i>
+                        <p>Email Us</p>
+                        <a href="mailto:kgminternational2009@gmail.com">kgminternational2009@gmail.com</a>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-map-marker-alt icon-primary"></i>
+                        <p>Address</p>
+                        <span>Join Us at no. 9 Davis Street, Doorenfontien, Johannesburg, South Africa</span>
+                    </div>
+                </div>
+
+                <div class="follow-us">
+                    <h3>Follow Us On</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1CZkNpArFc/" class="social-icon"><i
+                                class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="map-placeholder">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.84131044937!2d28.05167507486073!3d-26.201839977078023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950f74f74314eb%3A0xd6469afb106fd605!2skingdom%20of%20Glory%20Ministries%20International!5e0!3m2!1sen!2sie!4v1755519134984!5m2!1sen!2sie"
+                width="1500" height="500" align="center" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <section class="survey-wrapper">
+        <div class="container">
+            <h2>Community Feedback Survey</h2>
+            <p>Help us serve you better by sharing your thoughts on our website and ministries.</p>
+
+            <form id="church-survey">
+                <!-- Section 1: Involvement -->
+                <div class="survey-section">
+                    <h3>1. About Your Involvement</h3>
+                    <div class="form-group">
+                        <label for="age">What is your age range?</label>
+                        <select id="age" name="age" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="under_18">Under 18</option>
+                            <option value="18_25">18 - 25</option>
+                            <option value="26_40">26 - 40</option>
+                            <option value="41_60">41 - 60</option>
+                            <option value="over_60">Over 60</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>How often do you attend our services?</label>
+                        <div class="radio-group">
+                            <input type="radio" id="weekly" name="attendance" value="weekly" required>
+                            <label for="weekly">Weekly</label>
+                            <input type="radio" id="monthly" name="attendance" value="monthly">
+                            <label for="monthly">Monthly</label>
+                            <input type="radio" id="rarely" name="attendance" value="rarely">
+                            <label for="rarely">Rarely/Online Only</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2: Website Experience -->
+                <div class="survey-section">
+                    <h3>2. Website Experience</h3>
+                    <div class="form-group">
+                        <label for="website-rating">How would you rate the ease of navigating our website?</label>
+                        <div class="rating-group">
+                            <span>Difficult</span>
+                            <input type="radio" id="rate1" name="website-rating" value="1" required>
+                            <label for="rate1">1</label>
+                            <input type="radio" id="rate2" name="website-rating" value="2">
+                            <label for="rate2">2</label>
+                            <input type="radio" id="rate3" name="website-rating" value="3">
+                            <label for="rate3">3</label>
+                            <input type="radio" id="rate4" name="website-rating" value="4">
+                            <label for="rate4">4</label>
+                            <input type="radio" id="rate5" name="website-rating" value="5">
+                            <label for="rate5">5</label>
+                            <span>Easy</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>What content do you look for most often?</label>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="sermons" name="content[]" value="sermons">
+                            <label for="sermons">Sermon Archives</label>
+                            <input type="checkbox" id="events" name="content[]" value="events">
+                            <label for="events">Events/Calendar</label>
+                            <input type="checkbox" id="giving" name="content[]" value="giving">
+                            <label for="giving">Online Giving</label>
+                            <input type="checkbox" id="contact" name="content[]" value="contact">
+                            <label for="contact">Contact Information</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="website-comments">Suggestions for improving the website:</label>
+                        <textarea id="website-comments" name="website-comments" rows="4"></textarea>
+                    </div>
+                </div>
+
+                <!-- Section 3: Further Comments -->
+                <div class="survey-section">
+                    <h3>3. Further Comments</h3>
+                    <div class="form-group">
+                        <label for="general-comments">General comments or prayer requests:</label>
+                        <textarea id="general-comments" name="general-comments" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-optional">Optional: Your email for follow-up</label>
+                        <input type="email" id="email-optional" name="email-optional" placeholder="email@example.com">
+                    </div>
+                </div>
+
+                <button type="submit" id="submit-button">Submit Feedback</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+
+            <div class="footer-col about-col">
+                <div class="logo"><i class="fas fa-gem"></i> KGM INT'L</div>
+                <p>1 Kings 5:4. But now the Lord my God has given me rest on every side; there is neither adversary nor
+                    evil occurance. </p>
+                <div class="footer-social-links">
+                    <a href="https://www.facebook.com/share/1CZkNpArFc/"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Miracle and Breakthrough Service</a></li>
+                    <li><a href="#">Healing & Deliverance Service</a></li>
+                    <li><a href="#">Holy Communion Service</a></li>
+                    <li><a href="#">Fasting & Prayer Deliverance Service</a></li>
+                    <li><a href="#">Prophetic & Miracle Service</a></li>
+                    <li><a href="#">Sunday Service</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col info-col">
+                <h4>Information</h4>
+                <p><i class="fas fa-phone"></i> +27 78 355 6634</p>
+                <p><i class="far fa-envelope"></i> kgminternational2009@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Join Us at no. 9 Davis Street, Doorenfontien, Johannesburg,
+                    South Africa</p>
+
+                <h4 class="hours-title">Open Hours</h4>
+                <p>Monday - Saturday ( 10:00 - 19:00 )</p>
+                <p>Sunday ( 09:00 - 14:00 )</p>
+            </div>
+
+        </div>
+        <div class="copyright">
+            ST10477447
+        </div>
+    </footer>
+
+    <script src="JavaScript/contact.js"></script>
+</body>
+</html>

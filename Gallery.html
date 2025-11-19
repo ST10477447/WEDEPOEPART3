@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "KGM IN'L">
+    <meta name = "author" content = "ST10477447">
+    <meta name = "keywords" content = "HTML, CSS, JavaScript">
+    <link rel="stylesheet" href="CSS/gallery.css">
+    <title>Gallery</title>
+
+  <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+ <div class="container">
+                    <div align="left">
+                        <img src="images/a.jpg" style="width:70px; height:70px;">
+                    </div>
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+               
+                    KGM INT'L
+                </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            
+            <div class="menu-toggle" id="menuToggle">☰</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="Home page.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Foundation.html">Foundation</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+     <div class="contact-info-header">
+                    <span class="email-top"><i class="far fa-envelope"></i> kgminternational2009@gmail.com</span>
+                    <span class="phone-top"><i class="fas fa-phone"></i> Call Us: +27 78 355 6634</span>
+                </div>
+            </div>
+    </header>
+
+   
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>KGM Photo Gallery</h1>
+       
+        <!-- Gallery Section -->
+        <div class="gallery">
+            <div class="gallery-item" onclick="openLightbox('images/b.jpg')">
+                <img src="images/b.jpg" alt="church">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('images/j.jpg')">
+                <img src="images/j.jpg" alt="church">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('images/k.jpg')">
+                <img src="images/k.jpg" alt="church">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('images/image 7.jpg')">
+                <img src="images/image 7.jpg" alt="church">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('images/image 8.jpg')">
+                <img src="images/image 8.jpg" alt="City 2">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('images/image 10.jpg')">
+                <img src="images/image 10.jpg" alt="church">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('images/w.png')">
+                <img src="images/w.png" alt="church">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('images/v.png')">
+                <img src="images/v.png" alt="church">
+            </div>
+        </div>
+    </div>
+   
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <button class="prev-btn" onclick="changeImage(-1)">&#10094;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+        <button class="next-btn" onclick="changeImage(1)">&#10095;</button>
+    </div>
+    <script src="one.js"></script>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; #ST10477447.</p>
+            <p id="datetime"></p>
+            <script src="JavaScript/gallery.js"></script>
+        </div>
+    </footer>
+</body>
+</html>

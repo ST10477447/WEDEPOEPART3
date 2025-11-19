@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<head>
+  <title>Church</title>
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "KGM IN'L">
+    <meta name = "author" content = "ST10477447">
+    <meta name = "keywords" content = "HTML, CSS, JavaScript">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="CSS/homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+ <div class="container">
+                    <div align="left">
+                        <img src="images/a.jpg" style="width:70px; height:70px;">
+                    </div>
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+               
+                    KGM INT'L
+                </div>
+               <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="menu-toggle" id="menuToggle">☰</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="Home page.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Foundation.html">Foundation</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+                <div class="contact-info-header">
+                    <span class="email-top"><i class="far fa-envelope"></i> kgminternational2009@gmail.com</span>
+                    <span class="phone-top"><i class="fas fa-phone"></i> Call Us: +27 78 355 6634</span>
+                </div>
+            </div>
+    </header>
+
+<section class="hero-section">
+  <div class="hero-content">
+    <img src = "images/hh.jpg" alt = "">
+    <h2 class="welcome-text">WELCOME TO </h2>
+    <h1 class="church-name">KINGDOM OF GLORY MINISTRIES INT'L</h1>
+    <p class="service-times">Regular Sunday Services from<br>9AM TILL LATE</p>
+    <a href="contact.html" class="button">JOIN US THIS WEEKEND!</a>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="container text-center">
+    <h2>To grow in Faith and share our Faith in God with the World around us</h2>
+    <p class="description">1 Kings 5:4. But now the Lord my God has given me rest on every side; there is neither adversary nor evil occurance.</p>
+    <div class="about-links">
+      <a href="about.html" class="about-link">ABOUT US</a>
+      <a href="about.html" class="about-link">VISION & BELIEFS</a>
+      <a href="about.html" class="about-link">HISTORY</a>
+    </div>
+  </div>
+</section>
+<section class="two-column-section">
+  <div class="container flex-row">
+    <div class="text-column">
+      <h3>Committed to spreading the Gospel of God's kingdom</h3>
+      <p>No matter where you are in your journey, you're welcome here. Whether you're seeking answers,
+        or looking for a community, we invite you to join us.</p>
+      <div class="button-group">
+        <a href="foundation.html" class="button-outline">GET INVOLVED</a>
+        <a href="contact.html" class="button-outline">GET DIRECTIONS</a>
+      </div>
+    </div>
+    <div class="image-column">
+      <img src="images/gg.jpg"  alt="Church Building">
+    </div>
+  </div>
+</section>
+<section class="sermons-section">
+  <div class="container">
+    <h2 class="section-title">Weekly Activities</h2>
+    <div class="sermon-grid">
+      <div class="sermon-card">
+        <img src="images/e.jpg" alt="TUESDAY">
+        <p>TUESDAY</p>
+        <p>Healing & Deliverance Service from 5:00pm - 7:30pm</p>
+      </div>
+      <div class="sermon-card">
+        <img src="images/m.jpg" alt="WEDNESDAY">
+        <p>WEDNESDAY</p>
+        <p>Business Breakthrough from 12:00pm - 2:00pm and Holy Communion Service from 5:30pm - 7:30pm</p>
+      </div>
+      <div class="sermon-card">
+        <img src="images/f.jpg" alt="THURSDAY">
+        <p>THURSDAY</p>
+        <p>Fasting & Prayer Deliverance Service from 10pm - 2:00pm</p>
+      </div>
+     <div class="sermon-card">
+        <img src="images/c.jpg" alt="FRIDAY">
+        <p>FRIDAY</p>
+        <p>Prophetic & Miracle Service 5:00pm - 7:30pm</p>
+      </div> 
+    </div>
+  </div>
+  <h3 align = "center">DECEMBER EVENT CALENDER(updated monthly)</h3>
+  <div class="gallery">
+             <div class="gallery-item" onclick="openLightbox('images/Events Poster.png')">
+                <img src="images/Events Poster.png" alt="church calender">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('images/event.png')">
+                <img src="images/event.png" alt="church calender">
+            </div>
+            <div class="lightbox" id="lightbox">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <button class="prev-btn" onclick="changeImage(-1)">&#10094;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+        <button class="next-btn" onclick="changeImage(1)">&#10095;</button>
+    </div>
+  <script src = "JavaScript/homepage.js"></script>
+</section>
+</body>
+
+<footer>
+<p>
+&copy;ST10477447
+</p>
+</footer>
+<style>
+  .hero-section {
+  background: url('images/hh.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px; /* Adjust padding for height */
+}
+</style>
+</html>

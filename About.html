@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "KGM IN'L">
+    <meta name = "author" content = "ST10477447">
+    <meta name = "keywords" content = "HTML, CSS, JavaScript">
+    <title>About Us</title>
+    <link rel="stylesheet" href="CSS/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+ <div class="container">
+                    <div align="left">
+                        <img src="images/a.jpg" alt = "Profile photo" style="width:70px; height:70px;">
+                    </div>
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                    KGM INT'L
+                </div>
+          <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"></div>
+            <div class="menu-toggle" id="menuToggle">☰</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="Home page.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Foundation.html">Foundation</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+                <div class="contact-info-header">
+                    <span class="email-top"><i class="far fa-envelope"></i> kgminternational2009@gmail.com</span>
+                    <span class="phone-top"><i class="fas fa-phone"></i> Call Us: +27 78 355 6634</span>
+                </div>
+            </div>
+    </header>
+    
+    <div class="social-links">
+      <a href="https://www.facebook.com/share/1CZkNpArFc/"><img src="images/ff.jpg" alt="Facebook"></a>
+      
+    </div>
+  </div>
+</header>
+ <section class="hero-mission-section">
+        <div class="hero-content">
+           <img src = "images/zz.jpeg" alt = "">
+            <p class="section-title">ABOUT US</p>
+            <h1>OUR MISSION</h1>
+            <p>Through the preaching and teaching of God's undiluted word. Reaching out to the less privilaged in our society with the love of Christ and by praying for 
+               the nations of the world.
+           </p>
+            <div class="mission-text">
+                </div>
+        </div>
+    </section>
+
+    <section class="what-we-believe-section">
+        <div class="container">
+            <h2 class="section-heading">Brief History</h2>
+            <div class="content-wrapper">
+                <div class="believe-points">
+                    <ol>
+                        <p> From a humble beginning with just a handful of dedicated members, our church has grown into a vibrant and thriving community. for 16 years, we have stood as a 
+    beacon of hope and a pillar of strength, sharing and transformative power of faith and service.
+</p>
+<p>
+    It all began in August 2009, when our founder, Dr Rev Yohannan Uche Akwada, driven by a vision, gathered for the very first service. Held in Albertina Sisulu(a small rented hall),
+    those early days defined by passionate worship and a deep sense of purpose. We were a family long before we had a permanent home.
+</p>
+<p>
+    Throughout the years, our journey has been marked by milestones and memories. In (2015), we moved into our first official building at 9 Davis Street, Doorenfontien,
+    a space we filled with laughter, prayer, and community events. We launched the Yohannan Foundation, expanding our mission beyond our walls to serve our neighbors. 
+</p>
+<p>
+    Today, we look back with gratitude and forward with hope. The seeds of faith planted 16 years ago have blossomed into a community of over 200 members including 
+    in Nigeria. we're a place where friendships are forged, lives are transformed and faith is lived out in tangible ways.
+</p>
+<p>
+    As we celebrate our past, we are even more excited about our future. We invite you to join us as we continue to write our story, one chapter at a time.</p>
+    <h2>VISION</h2>
+<p>To Reach, Raise and Restore humanity to his original state in God</p>
+                        </ol>
+                </div>
+                <div class="image-placeholder">
+                    <img src = "images/undefined.jpeg" style = "width: 500px">
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="leadership-team-section">
+       <section class="sermons-section">
+  <div class="container">
+   <h2 class="section-heading">MEET OUR<br>LEADERSHIP TEAM</h2>
+
+        <div id = "myLightbox" class = "lightbox-modal" onclick = "closeLightbox()">
+            <div class = "modal-content" onclick = "event.stopPropagation()">
+                <span class = "close-btn" onclick = "closeLightbox">x</span>
+                <a class = "prev-arrow" onclick = "changeImage(-1)">&#10094;</a>
+                <image id = "lightboxImage" src = "" alt = "Large Image">
+                    <div id = "caption"></div>
+                    <a class = "next-arrow" onclick = "changeImage(1)">&#10095;</a>
+            </div>
+        </div>
+    <div class = "gallery-container">
+    <div class="sermon-grid">
+      <div class="sermon-card">
+        <a href = "#" onclick = "openLightbox(0); return false;"></a>
+        <img class="thumbnail" src="images/u.png" alt="Pastor">
+        <p>Our late Pastor and Founder Rev Dr Yohanan Uche Akwada</p>
+      </div>
+
+      <div class="sermon-card">
+        <a href = "#" onclick = "openLightbox(1); return false;"></a>
+        <img class = "thumbnail" src="images/o.png" alt="Pastor">
+        <p>General Overseer Pastor Tabitha Akwada</p>
+      </div>
+
+      <div class="sermon-card">
+        <a href = "#" onclick = "openLightbox(2); return false;"></a>
+        <img class = "thumbnail" src="images/v.png" alt="Pastor">
+        <p>Ministering Pastor Mercy Okafor</p>
+      </div>
+
+     <div class="sermon-card">
+      <a href = "#" onclick = "openLightbox(3); return false;"></a>
+        <img class = "thumbnail" src="images/n.jpg" alt="Pastor">
+        <p>Pastor Churchill</p>
+      </div> 
+
+      <div class="sermon-card">
+        <a href = "#" onclick = "openLightbox(4); return false;"></a>
+        <img class = "thumbnail" src="images/x.png" alt="Pastor">
+        <p>Pastor Lukmon</p>
+      </div>
+
+      <div class="sermon-card">
+        <a href = "#" onclick = "openLightbox(5); return false;"></a>
+        <img class = "thumbnail" src="images/p.jpg" alt="Pastor">
+        <p>Pastor Connie</p>
+      </div>
+
+      <div class="sermon-card">
+        <a href = "#" onclick = "openLightbox(6); return false;"></a>
+        <img class = "thumbnail" src="images/q.jpg" alt="Choir">
+        <p>Glorious Choir</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+</section>
+
+    <footer>
+<p>
+&copy;ST10477447
+</p>
+</footer>
+</body>
+</html>
